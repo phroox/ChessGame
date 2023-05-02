@@ -37,11 +37,11 @@
  
 | Ferramenta | Download | Versão |
 |:--- | :--- | :--- |
-|![Git](https://img.shields.io/badge/git%20-%23121011.svg?&style=for-the-badge&logo=git&logoColor=red)| https://git-scm.com | Python 3.11.3 |
-|![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) | https://www.python.org/ | Python 3.11.3 |
+|![Git](https://img.shields.io/badge/git%20-%23121011.svg?&style=for-the-badge&logo=git&logoColor=red)| https://git-scm.com |  |
+|![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) | https://www.python.org/ | 3.11.3 |
+|![pygame](https://img.shields.io/badge/pygame-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) | https://www.python.org/ | 2.1.2 |  
   
 </p>
-
 <h2 id="documentacao"> 
   Documentação do Git
 </h2>
