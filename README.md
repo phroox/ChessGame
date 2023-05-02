@@ -38,7 +38,7 @@
 | Ferramenta | Download |
 |:--- | :--- |
 |![Git](https://img.shields.io/badge/git%20-%23121011.svg?&style=for-the-badge&logo=git&logoColor=red)| https://git-scm.com |
-|![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) | https://nodejs.org/en/ |
+|![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) | https://www.python.org/ |Python 3.11.3|
 </p>
 
 <h2 id="documentacao"> 
