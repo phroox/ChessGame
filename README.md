@@ -92,6 +92,5 @@
   Contribuições
 </h2>
 
-| <a href="https://github.com/ws-gmdo"><img src="https://github.com/ws-gmdo.png?" height="80px" width="80px;" /><br><sub>Lucas Couto</b></sub></a><br/> 
-<a href="https://github.com/ws-e-psas"><img src="https://github.com/ws-e-psas.png?" height="80px" width="80px;" /><br><sub>Philippe Simões</b></sub></a><br/>|
+| <a href="https://github.com/ws-gmdo"><img src="https://github.com/ws-gmdo.png?" height="80px" width="80px;" /><br><sub>Gustavo Demetrio</b></sub></a><br/> | <a href="https://github.com/ws-wcdf"><img src="https://github.com/ws-wcdf.png?" height="80px" width="80px;" /><br><sub>Willian Caetano</b></sub></a><br/>| <a href="https://github.com/ws-jeh"><img src="https://github.com/ws-jeh.png?" height="80px" width="80px;" /><br><sub>José Hermida</b></sub></a><br/> | <a href="https://github.com/ws-e-inuf"><img src="https://github.com/ws-e-inuf.png?" height="80px" width="80px;" /><br><sub>Isabelle Ferreira</b></sub></a><br/> | <a href="https://github.com/ws-ksda"><img src="https://github.com/ws-ksda.png?" height="80px" width="80px;" /><br><sub>Kevin Sena</b></sub></a><br/>| <a href="https://github.com/ws-e-psas"><img src="https://github.com/ws-e-psas.png?" height="80px" width="80px;" /><br><sub>Philippe Simões</b></sub></a><br/>|
 |:---: | :---: | :---: | :---: | :---: | :---: |
