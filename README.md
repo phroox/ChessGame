@@ -39,7 +39,7 @@
 |:--- | :--- | :--- |
 |![Git](https://img.shields.io/badge/git%20-%23121011.svg?&style=for-the-badge&logo=git&logoColor=red)| https://git-scm.com |  |
 |![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) | https://www.python.org/ | 3.11.3 |
-|![pygame](https://img.shields.io/badge/pygame-pygame-yellowgreen) | https://www.python.org/ | 2.1.2 |  
+|![pygame](https://img.shields.io/badge/python-pygame-yellowgreen) | https://www.python.org/ | 2.1.2 |  
   
 </p>
 <h2 id="documentacao"> 
