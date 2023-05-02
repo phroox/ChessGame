@@ -38,7 +38,7 @@
 | Ferramenta | Download |
 |:--- | :--- |
 |![Git](https://img.shields.io/badge/git%20-%23121011.svg?&style=for-the-badge&logo=git&logoColor=red)| https://git-scm.com |
-|![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) | https://www.python.org/ |Python 3.11.3|
+|![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) | https://www.python.org/ | Python 3.11.3 |
 </p>
 
 <h2 id="documentacao"> 
@@ -55,7 +55,7 @@
 
 > <b>No terminal, clone o repositório:</b>
 
-  git clone https://github.com/WILSON-SONS-SERVICOS-MARITIMOS-LTDA/ecobranca-react-next-frontend.git
+  git clone https:...
  
 > <b>Entre na pasta:</b>
 
