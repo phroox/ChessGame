@@ -35,9 +35,9 @@
 <p> 
  Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
  
-| Ferramenta | Download |
+| Ferramenta | Download | Versão |
 |:--- | :--- | :--- |
-|![Git](https://img.shields.io/badge/git%20-%23121011.svg?&style=for-the-badge&logo=git&logoColor=red)| https://git-scm.com |
+|![Git](https://img.shields.io/badge/git%20-%23121011.svg?&style=for-the-badge&logo=git&logoColor=red)| https://git-scm.com | Python 3.11.3 |
 |![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) | https://www.python.org/ | Python 3.11.3 |
   
 </p>
