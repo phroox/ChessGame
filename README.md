@@ -92,5 +92,6 @@
   Contribuições
 </h2>
 
-| <a href="https://github.com/ws-gmdo"><img src="https://github.com/LucasCouto22.png?" height="80px" width="80px;" /><br><sub>Lucas Couto</b></sub></a><br/> | <a href="https://github.com/ws-e-psas"><img src="https://github.com/ws-e-psas.png?" height="80px" width="80px;" /><br><sub>Philippe Simões</b></sub></a><br/>|
+| <a href="https://github.com/ws-gmdo"><img src="https://github.com/ws-gmdo.png?" height="80px" width="80px;" /><br><sub>Lucas Couto</b></sub></a><br/> 
+<a href="https://github.com/ws-e-psas"><img src="https://github.com/ws-e-psas.png?" height="80px" width="80px;" /><br><sub>Philippe Simões</b></sub></a><br/>|
 |:---: | :---: | :---: | :---: | :---: | :---: |
