@@ -70,5 +70,5 @@
   Contribuições
 </h2>
 
-| <a href="https://github.com/phroox"><img src="https://github.com/phroox.png?" height="80px" width="80px;" /><br><sub>Philippe Simões</b></sub></a><br/> | <a href="https://github.com/lucascouto22"><img src="https://github.com/Lucascouto22.png?" height="80px" width="80px;" /><br><sub>Lucas Couto</b></sub></a><br/>| <a href="https://github.com/offCalmonn"><img src="https://github.com/offCalmonn.png?" height="80px" width="80px;" /><br><sub>Alexandre Calmon</b></sub></a><br/> | <a href="https://github.com/phroox"><img src="https://github.com/phroox.png?" height="80px" width="80px;" /><br><sub>Philippe Simões</b></sub></a><br/> | <a href="https://github.com/phroox"><img src="https://github.com/phroox.png?" height="80px" width="80px;" /><br><sub>Philippe Simões</b></sub></a><br/>| <a href="https://github.com/offCalmonn"><img src="https://github.com/phroox.png?" height="80px" width="80px;" /><br><sub>Philippe Simões</b></sub></a><br/>|
-|:---: | :---: | :---: | :---: | :---: | :---: |
+| <a href="https://github.com/phroox"><img src="https://github.com/phroox.png?" height="80px" width="80px;" /><br><sub>Philippe Simões</b></sub></a><br/> | <a href="https://github.com/lucascouto22"><img src="https://github.com/Lucascouto22.png?" height="80px" width="80px;" /><br><sub>Lucas Couto</b></sub></a><br/>| <a href="https://github.com/offCalmonn"><img src="https://github.com/offCalmonn.png?" height="80px" width="80px;" /><br><sub>Alexandre Calmon</b></sub></a><br/> |
+|:---: | :---: | :---: |
