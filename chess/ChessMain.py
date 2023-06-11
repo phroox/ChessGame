@@ -169,18 +169,7 @@ def drawGameState(screen, game_state, valid_moves, square_selected):
     drawPieces(screen, game_state.board)  # draw pieces on top of those squares
 
 
-'''
-Responsible for all the graphics within current game state.
-'''
-def drawGameState(screen, game_state):
-    drawBoard(screen) #draw squares on the board
-    #add in piece highlighting or move suggestions (later)
-    drawPieces(screen, game_state.board) #draw pieces on top of those squares      
 
-'''
-Draw the squares on the board.
-The top left square is always light.
-'''
 def drawBoard(screen):
     colors = [p.Color("white"), p.Color("gray")]
     for row in range(DIMENSION):
