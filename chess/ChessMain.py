@@ -115,6 +115,59 @@ def main():
                         ai_thinking = False
                     move_undone = True
 
+        # AI move finder
+        if not game_over and not human_turn and not move_undone:
+            if not ai_thinking:
+                ai_thinking = True
+                return_queue = Queue()  # used to pass data between threads
+                move_finder_process = Process(target=ChessAI.findBestMove, args=(game_state, valid_moves, return_queue))
+                move_finder_process.start()
+
+            if not move_finder_process.is_alive():
+                ai_move = return_queue.get()
+                if ai_move is None:
+                    ai_move = ChessAI.findRandomMove(valid_moves)
+                game_state.makeMove(ai_move)
+                move_made = True
+                animate = True
+                ai_thinking = False
+
+        if move_made:
+            if animate:
+                animateMove(game_state.move_log[-1], screen, game_state.board, clock)
+            valid_moves = game_state.getValidMoves()
+            move_made = False
+            animate = False
+            move_undone = False
+
+        drawGameState(screen, game_state, valid_moves, square_selected)
+
+        if not game_over:
+            drawMoveLog(screen, game_state, move_log_font)
+
+        if game_state.checkmate:
+            game_over = True
+            if game_state.white_to_move:
+                drawEndGameText(screen, "Black wins by checkmate")
+            else:
+                drawEndGameText(screen, "White wins by checkmate")
+
+        elif game_state.stalemate:
+            game_over = True
+            drawEndGameText(screen, "Stalemate")
+
+        clock.tick(MAX_FPS)
+        p.display.flip()
+
+
+def drawGameState(screen, game_state, valid_moves, square_selected):
+    """
+    Responsible for all the graphics within current game state.
+    """
+    drawBoard(screen)  # draw squares on the board
+    highlightSquares(screen, game_state, valid_moves, square_selected)
+    drawPieces(screen, game_state.board)  # draw pieces on top of those squares
+
 
 '''
 Responsible for all the graphics within current game state.
