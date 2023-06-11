@@ -5,16 +5,16 @@ Displaying current GameStatus object.
 '''
 
 import pygame as p
-import ChessEngine
+import ChessEngine, ChessAI
 import sys
+from multiprocessing import Process, Queue
 
-WIDTH = HEIGHT = 512
+BOARD_WIDTH = BOARD_HEIGHT = 512
+MOVE_LOG_PANEL_WIDTH = 250
+MOVE_LOG_PANEL_HEIGHT = BOARD_HEIGHT
 DIMENSION = 8
-
-SQUARE_SIZE = HEIGHT // DIMENSION
-
+SQUARE_SIZE = BOARD_HEIGHT // DIMENSION
 MAX_FPS = 15
-
 IMAGES = {}
 
 '''
