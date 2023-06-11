@@ -64,3 +64,11 @@ piece_position_scores = {"wN": knight_scores,
 CHECKMATE = 1000
 STALEMATE = 0
 DEPTH = 3
+
+def findBestMove(game_state, valid_moves, return_queue):
+    global next_move
+    next_move = None
+    random.shuffle(valid_moves)
+    findMoveNegaMaxAlphaBeta(game_state, valid_moves, DEPTH, -CHECKMATE, CHECKMATE,
+                             1 if game_state.white_to_move else -1)
+    return_queue.put(next_move)
