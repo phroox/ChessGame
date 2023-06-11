@@ -32,6 +32,15 @@ def loadImages():
         IMAGES[piece] = p.transform.scale(p.image.load("images/" + piece + ".png"), (SQUARE_SIZE, SQUARE_SIZE))
 
 
+def drawWelcomeScreen(screen):
+    screen.fill(p.Color("white"))  # Preenche a tela com uma cor de fundo
+    welcome_font = p.font.SysFont("Arial", 32)
+    text_surface = welcome_font.render("Bem-vindo ao Xadrez!", True, p.Color("black"))
+    text_rect = text_surface.get_rect(center=(screen.get_width() // 2, screen.get_height() // 2))
+    screen.blit(text_surface, text_rect)
+    p.display.flip()  # Atualiza a tela para exibir o texto de boas-vindas
+
+
 '''
 The main driver for our code.
 This will handle user input and updating the graphics.
@@ -51,6 +60,8 @@ def main():
     animate = False  # flag variable for when we should animate a move
     loadImages()  # do this only once before while loop
     running = True
+    drawWelcomeScreen(screen)  # Desenha a tela de boas-vindas antes do loop principal
+
     square_selected = ()  # no square is selected initially, this will keep track of the last click of the user (tuple(row,col))
     player_clicks = []  # this will keep track of player clicks (two tuples)
     game_over = False
@@ -62,6 +73,8 @@ def main():
     player_two = False  # if a hyman is playing white, then this will be True, else False
 
     while running:
+        # Lógica principal do jogo...
+
         human_turn = (game_state.white_to_move and player_one) or (not game_state.white_to_move and player_two)
         for e in p.event.get():
             if e.type == p.QUIT:
