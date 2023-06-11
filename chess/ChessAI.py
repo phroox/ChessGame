@@ -60,3 +60,7 @@ piece_position_scores = {"wN": knight_scores,
                          "bR": rook_scores[::-1],
                          "wp": pawn_scores,
                          "bp": pawn_scores[::-1]}
+
+CHECKMATE = 1000
+STALEMATE = 0
+DEPTH = 3
