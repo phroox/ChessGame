@@ -37,23 +37,29 @@ The main driver for our code.
 This will handle user input and updating the graphics.
 '''
 def main():
+    """
+    The main driver for our code.
+    This will handle user input and updating the graphics.
+    """
     p.init()
-    screen = p.display.set_mode((WIDTH, HEIGHT))
+    screen = p.display.set_mode((BOARD_WIDTH + MOVE_LOG_PANEL_WIDTH, BOARD_HEIGHT))
     clock = p.time.Clock()
     screen.fill(p.Color("white"))
     game_state = ChessEngine.GameState()
-    loadImages() #do this only once before while loop
+    valid_moves = game_state.getValidMoves()
+    move_made = False  # flag variable for when a move is made
+    animate = False  # flag variable for when we should animate a move
+    loadImages()  # do this only once before while loop
     running = True
-    while running:
-        for e in p.event.get():
-            if e.type == p.QUIT:
-                running = False
-                p.quit()
-                sys.exit()
-
-        clock.tick(MAX_FPS)
-        p.display.flip()
-        drawGameState(screen, game_state)
+    square_selected = ()  # no square is selected initially, this will keep track of the last click of the user (tuple(row,col))
+    player_clicks = []  # this will keep track of player clicks (two tuples)
+    game_over = False
+    ai_thinking = False
+    move_undone = False
+    move_finder_process = None
+    move_log_font = p.font.SysFont("Arial", 14, False, False)
+    player_one = True  # if a human is playing white, then this will be True, else False
+    player_two = False  # if a hyman is playing white, then this will be True, else False
 
 
 '''
