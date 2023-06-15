@@ -52,6 +52,14 @@
   Como executar o projeto
 </h2>
 
+<b>Atente-se para as versões instaladas do Python e PyGame<br/>
+
+<p><b><color="yellow">Caso não consiga instalar o PyGame na versão correta, temos no repositório um executável da biblioteca.</color></b></p>
+
+<b>Primeiro passo: Clone o repositório para máquina local.</b>
+
+<b>Segundo Passo: Dentro da pasta baixada, em seu terminal, inicie o jogo com o código "Python chess/ChessMain.py"</b>
+
 <b>Em Construção<br/>
 
 
