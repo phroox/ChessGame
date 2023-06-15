@@ -16,7 +16,6 @@
 <h4>
   <li><a href="#status">Status</a></li>
   <li><a href="#requisitos">Pré-Requisitos</a></li>
-  <li><a href="#documentacao">Documentação do Git</a></li>
   <li><a href="#executar">Como executar o projeto</a><br></li>
   <li><a href="#tecnologias">Tecnologias</a><br></li>
   <li><a href="#contribuicoes">Contribuições</a></li>
@@ -26,7 +25,7 @@
   Status
 </h2>
 
-> ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=yellow&style=for-the-badge)
+> ![Badge em Produção](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=yellow&style=for-the-badge)
 
 <h2 id="requisitos"> 
   Pré-requisitos
