@@ -25,7 +25,7 @@
   Status
 </h2>
 
-> ![Badge em Produção](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=yellow&style=for-the-badge)
+> ![Badge em Produção](https://img.shields.io/static/v1?label=STATUS&message=EM%20PRODU%C3%87%C3%83O&color=green&style=for-the-badge)
 
 <h2 id="requisitos"> 
   Pré-requisitos
@@ -57,15 +57,7 @@
 
 
 
-<h2 id="tecnologias"> 
-  Tecnologias
-</h2>
 
-<p>
-  Durante a construção da aplicação, foram utilizadas as seguintes tecnologias:
-</p>
-
-| Ferramenta | Categoria | Informações |
 
 
 <h2 id="contribuicoes"> 
