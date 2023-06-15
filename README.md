@@ -25,7 +25,7 @@
   Status
 </h2>
 
-> ![Badge em Produção](https://img.shields.io/static/v1?label=STATUS&message=EM%20PRODU%C3%87%C3%83O&color=green&style=for-the-badge)
+> ![Badge em Produção](https://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=green&style=for-the-badge)
 
 <h2 id="requisitos"> 
   Pré-requisitos
