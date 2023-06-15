@@ -57,12 +57,12 @@
 
 
 
-
+https://github.com/Gabriel-Arc
 
 
 <h2 id="contribuicoes"> 
   Contribuições
 </h2>
 
-| <a href="https://github.com/phroox"><img src="https://github.com/phroox.png?" height="80px" width="80px;" /><br><sub>Philippe Simões</b></sub></a><br/> | <a href="https://github.com/lucascouto22"><img src="https://github.com/Lucascouto22.png?" height="80px" width="80px;" /><br><sub>Lucas Couto</b></sub></a><br/>| <a href="https://github.com/offCalmonn"><img src="https://github.com/offCalmonn.png?" height="80px" width="80px;" /><br><sub>Alexandre Calmon</b></sub></a><br/> |
-|:---: | :---: | :---: |
+| <a href="https://github.com/phroox"><img src="https://github.com/phroox.png?" height="80px" width="80px;" /><br><sub>Philippe Simões</b></sub></a><br/> | <a href="https://github.com/lucascouto22"><img src="https://github.com/Lucascouto22.png?" height="80px" width="80px;" /><br><sub>Lucas Couto</b></sub></a><br/>| <a href="https://github.com/offCalmonn"><img src="https://github.com/offCalmonn.png?" height="80px" width="80px;" /><br><sub>Alexandre Calmon</b></sub></a><br/> | <a href="https://github.com/EduardoSiq"><img src="https://github.com/EduardoSiq.png?" height="80px" width="80px;" /><br><sub>Eduardo Siqueira</b></sub></a><br/>| <a href="https://github.com/lteixeira58"><img src="https://github.com/lteixeira58.png?" height="80px" width="80px;" /><br><sub>Leonardo Teixeira</b></sub></a><br/>| <a href="https://github.com/Gabriel-Arc"><img src="https://github.com/Gabriel-Arc.png?" height="80px" width="80px;" /><br><sub>Gabriel Arcanjo</b></sub></a><br/> | 
+|:---: | :---: | :---: | :---: | :---: | :---: |
