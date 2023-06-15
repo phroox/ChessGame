@@ -16,7 +16,6 @@
 <h4>
   <li><a href="#status">Status</a></li>
   <li><a href="#requisitos">Pré-Requisitos</a></li>
-  <li><a href="#documentacao">Documentação do Git</a></li>
   <li><a href="#executar">Como executar o projeto</a><br></li>
   <li><a href="#tecnologias">Tecnologias</a><br></li>
   <li><a href="#contribuicoes">Contribuições</a></li>
@@ -26,7 +25,7 @@
   Status
 </h2>
 
-> ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=yellow&style=for-the-badge)
+> ![Badge em Produção](https://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=green&style=for-the-badge)
 
 <h2 id="requisitos"> 
   Pré-requisitos
@@ -42,28 +41,23 @@
 |![pygame](https://img.shields.io/badge/python-pygame-yellowgreen) | https://www.pygame.org/wiki/GettingStarted/ | 2.1.2 |  
   
 </p>
-<h2 id="documentacao"> 
-  Documentação do Git
-</h2>
 
-> O conteúdo relacionado a documentação do Git está disponível no repositório: <b>[Template-git](https://github.com/WILSON-SONS-SERVICOS-MARITIMOS-LTDA/template-git)</b> 
 
 <h2 id="executar"> 
   Como executar o projeto
 </h2>
 
-<b>Em Construção<br/>
+> Atente-se para as versões instaladas do Python e PyGame.
+
+> Caso não consiga instalar o PyGame na versão correta, temos no repositório um executável da biblioteca.
+
+> Primeiro passo: Clone o repositório para máquina local.
+
+> Segundo Passo: Dentro da pasta baixada, em seu terminal, inicie o jogo com o código "Python chess/ChessMain.py".
 
 
-<h2 id="tecnologias"> 
-  Tecnologias
-</h2>
 
-<p>
-  Durante a construção da aplicação, foram utilizadas as seguintes tecnologias:
-</p>
 
-| Ferramenta | Categoria | Informações |
 
 
 <h2 id="contribuicoes"> 
