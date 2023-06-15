@@ -1,7 +1,7 @@
 '''
-Main driver file.
-Handling user input.
-Displaying current GameStatus object.
+Arquivo principal do driver.
+Manipulação de entrada do usuário.
+Exibindo o objeto GameStatus atual.
 '''
 
 import pygame as p
@@ -18,14 +18,14 @@ MAX_FPS = 15
 IMAGES = {}
 
 '''
-Initialize a global directory of images.
-This will be called exactly once in the main.
+Inicialize um diretório global de imagens.
+Isso será chamado exatamente uma vez no main.
 '''
 
 def loadImages():
     """
-    Initialize a global directory of images.
-    This will be called exactly once in the main.
+    Inicialize um diretório global de imagens.
+    Isso será chamado exatamente uma vez no main.
     """
     pieces = ['wp', 'wR', 'wN', 'wB', 'wK', 'wQ', 'bp', 'bR', 'bN', 'bB', 'bK', 'bQ']
     for piece in pieces:
@@ -42,13 +42,13 @@ def drawWelcomeScreen(screen):
 
 
 '''
-The main driver for our code.
-This will handle user input and updating the graphics.
+O driver principal para o nosso código.
+Isso manipulará a entrada do usuário e atualizará os gráficos.
 '''
 def main():
     """
-    The main driver for our code.
-    This will handle user input and updating the graphics.
+    O driver principal para o nosso código.
+    Isso manipulará a entrada do usuário e atualizará os gráficos.
     """
     p.init()
     screen = p.display.set_mode((BOARD_WIDTH + MOVE_LOG_PANEL_WIDTH, BOARD_HEIGHT))
@@ -56,21 +56,21 @@ def main():
     screen.fill(p.Color("white"))
     game_state = ChessEngine.GameState()
     valid_moves = game_state.getValidMoves()
-    move_made = False  # flag variable for when a move is made
-    animate = False  # flag variable for when we should animate a move
-    loadImages()  # do this only once before while loop
+    move_made = False  # variável sinalizador para quando um movimento é feito
+    animate = False  # variável sinalizador para quando devemos animar um movimento
+    loadImages()  # faça isso apenas uma vez antes do loop while
     running = True
     drawWelcomeScreen(screen)  # Desenha a tela de boas-vindas antes do loop principal
 
-    square_selected = ()  # no square is selected initially, this will keep track of the last click of the user (tuple(row,col))
-    player_clicks = []  # this will keep track of player clicks (two tuples)
+    square_selected = ()  # nenhum quadrado é selecionado inicialmente, isso manterá o registro do último clique do usuário (tuple(row,col))
+    player_clicks = []  # isso irá acompanhar os cliques do jogador (duas tuplas)
     game_over = False
     ai_thinking = False
     move_undone = False
     move_finder_process = None
     move_log_font = p.font.SysFont("Arial", 14, False, False)
-    player_one = True  # if a human is playing white, then this will be True, else False
-    player_two = False  # if a hyman is playing white, then this will be True, else False
+    player_one = True  # se um humano está jogando com as brancas, então isso será Verdadeiro, senão Falso
+    player_two = False  # se um híman estiver jogando com as brancas, então isso será Verdadeiro, senão Falso
 
     while running:
         # Lógica principal do jogo...
@@ -80,33 +80,33 @@ def main():
             if e.type == p.QUIT:
                 p.quit()
                 sys.exit()
-            # mouse handler
+            # manipulador de mouse
             elif e.type == p.MOUSEBUTTONDOWN:
                 if not game_over:
-                    location = p.mouse.get_pos()  # (x, y) location of the mouse
+                    location = p.mouse.get_pos()  # (x, y) localização do mouse
                     col = location[0] // SQUARE_SIZE
                     row = location[1] // SQUARE_SIZE
-                    if square_selected == (row, col) or col >= 8:  # user clicked the same square twice
-                        square_selected = ()  # deselect
-                        player_clicks = []  # clear clicks
+                    if square_selected == (row, col) or col >= 8:  # usuário clicou no mesmo quadrado duas vezes
+                        square_selected = ()  # desmarcar
+                        player_clicks = []  # cliques claros
                     else:
                         square_selected = (row, col)
-                        player_clicks.append(square_selected)  # append for both 1st and 2nd click
-                    if len(player_clicks) == 2 and human_turn:  # after 2nd click
+                        player_clicks.append(square_selected)  # anexar para o 1º e o 2º clique
+                    if len(player_clicks) == 2 and human_turn:  # depois do 2º clique
                         move = ChessEngine.Move(player_clicks[0], player_clicks[1], game_state.board)
                         for i in range(len(valid_moves)):
                             if move == valid_moves[i]:
                                 game_state.makeMove(valid_moves[i])
                                 move_made = True
                                 animate = True
-                                square_selected = ()  # reset user clicks
+                                square_selected = ()  # redefinir cliques do usuário
                                 player_clicks = []
                         if not move_made:
                             player_clicks = [square_selected]
 
-            # key handler
+            # manipulador de chaves
             elif e.type == p.KEYDOWN:
-                if e.key == p.K_z:  # undo when 'z' is pressed
+                if e.key == p.K_z:  # desfazer quando 'z' é pressionado
                     game_state.undoMove()
                     move_made = True
                     animate = False
@@ -115,7 +115,7 @@ def main():
                         move_finder_process.terminate()
                         ai_thinking = False
                     move_undone = True
-                if e.key == p.K_r:  # reset the game when 'r' is pressed
+                if e.key == p.K_r:  # redefinir o jogo quando 'r' é pressionado
                     game_state = ChessEngine.GameState()
                     valid_moves = game_state.getValidMoves()
                     square_selected = ()
@@ -128,11 +128,11 @@ def main():
                         ai_thinking = False
                     move_undone = True
 
-        # AI move finder
+        # localizador de movimento AI
         if not game_over and not human_turn and not move_undone:
             if not ai_thinking:
                 ai_thinking = True
-                return_queue = Queue()  # used to pass data between threads
+                return_queue = Queue()  # usado para passar dados entre threads
                 move_finder_process = Process(target=ChessAI.findBestMove, args=(game_state, valid_moves, return_queue))
                 move_finder_process.start()
 
@@ -175,18 +175,18 @@ def main():
 
 def drawGameState(screen, game_state, valid_moves, square_selected):
     """
-    Responsible for all the graphics within current game state.
+    Responsável por todos os gráficos dentro do estado atual do jogo.
     """
-    drawBoard(screen)  # draw squares on the board
+    drawBoard(screen)  # desenhar quadrados no quadro
     highlightSquares(screen, game_state, valid_moves, square_selected)
-    drawPieces(screen, game_state.board)  # draw pieces on top of those squares
+    drawPieces(screen, game_state.board)  # desenhe peças em cima desses quadrados
 
 
 
 def drawBoard(screen):
     """
-    Draw the squares on the board.
-    The top left square is always light.
+    Desenhe os quadrados no quadro.
+    O quadrado superior esquerdo é sempre claro.
     """
     global colors
     colors = [p.Color("white"), p.Color("gray")]
@@ -198,7 +198,7 @@ def drawBoard(screen):
 
 def highlightSquares(screen, game_state, valid_moves, square_selected):
     """
-    Highlight square selected and moves for piece selected.
+    Realce o quadrado selecionado e mova-se para a peça selecionada.
     """
     if (len(game_state.move_log)) > 0:
         last_move = game_state.move_log[-1]
@@ -209,10 +209,10 @@ def highlightSquares(screen, game_state, valid_moves, square_selected):
     if square_selected != ():
         row, col = square_selected
         if game_state.board[row][col][0] == (
-                'w' if game_state.white_to_move else 'b'):  # square_selected is a piece that can be moved
-            # highlight selected square
+                'w' if game_state.white_to_move else 'b'):  # square_selected é uma peça que pode ser movida
+            # destaque o quadrado selecionado
             s = p.Surface((SQUARE_SIZE, SQUARE_SIZE))
-            s.set_alpha(100)  # transparency value 0 -> transparent, 255 -> opaque
+            s.set_alpha(100)  # valor de transparência 0 -> transparente, 255 -> opaco
             s.fill(p.Color('blue'))
             screen.blit(s, (col * SQUARE_SIZE, row * SQUARE_SIZE))
             # highlight moves from that square
@@ -223,9 +223,7 @@ def highlightSquares(screen, game_state, valid_moves, square_selected):
 
 
 
-'''
-Draw the pieces on the board using the current game_state.board
-'''
+
 def drawPieces(screen, board):
     """
     Draw the pieces on the board using the current game_state.board
@@ -239,7 +237,7 @@ def drawPieces(screen, board):
 
 def drawMoveLog(screen, game_state, font):
     """
-    Draws the move log.
+    Log de movimentação
 
     """
     move_log_rect = p.Rect(BOARD_WIDTH, 0, MOVE_LOG_PANEL_WIDTH, MOVE_LOG_PANEL_HEIGHT)
@@ -280,28 +278,28 @@ def drawEndGameText(screen, text):
 
 def animateMove(move, screen, board, clock):
     """
-    Animating a move
+    animação de movimentação
     """
     global colors
     d_row = move.end_row - move.start_row
     d_col = move.end_col - move.start_col
-    frames_per_square = 10  # frames to move one square
+    frames_per_square = 10  # quadros para mover um quadrado
     frame_count = (abs(d_row) + abs(d_col)) * frames_per_square
     for frame in range(frame_count + 1):
         row, col = (move.start_row + d_row * frame / frame_count, move.start_col + d_col * frame / frame_count)
         drawBoard(screen)
         drawPieces(screen, board)
-        # erase the piece moved from its ending square
+        # apaga a peça movida de sua casa final
         color = colors[(move.end_row + move.end_col) % 2]
         end_square = p.Rect(move.end_col * SQUARE_SIZE, move.end_row * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE)
         p.draw.rect(screen, color, end_square)
-        # draw captured piece onto rectangle
+        # desenha a peça capturada no retângulo
         if move.piece_captured != '--':
             if move.is_enpassant_move:
                 enpassant_row = move.end_row + 1 if move.piece_captured[0] == 'b' else move.end_row - 1
                 end_square = p.Rect(move.end_col * SQUARE_SIZE, enpassant_row * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE)
             screen.blit(IMAGES[move.piece_captured], end_square)
-        # draw moving piece
+        # desenhar peça em movimento
         screen.blit(IMAGES[move.piece_moved], p.Rect(col * SQUARE_SIZE, row * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
         p.display.flip()
         clock.tick(60)

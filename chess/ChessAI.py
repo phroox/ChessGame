@@ -1,5 +1,5 @@
 """
-Handling the AI moves.
+Movimentos de jogo da IA.
 """
 import random
 
@@ -77,7 +77,7 @@ def findMoveNegaMaxAlphaBeta(game_state, valid_moves, depth, alpha, beta, turn_m
     global next_move
     if depth == 0:
         return turn_multiplier * scoreBoard(game_state)
-    # move ordering - implement later //TODO
+    # ordem de movimento - implemente mais tarde //
     max_score = -CHECKMATE
     for move in valid_moves:
         game_state.makeMove(move)
@@ -97,13 +97,13 @@ def findMoveNegaMaxAlphaBeta(game_state, valid_moves, depth, alpha, beta, turn_m
 
 def scoreBoard(game_state):
     """
-    Score the board. A positive score is good for white, a negative score is good for black.
+    Marque a placa. Uma pontuação positiva é boa para o branco, uma pontuação negativa é boa para o preto.
     """
     if game_state.checkmate:
         if game_state.white_to_move:
-            return -CHECKMATE  # black wins
+            return -CHECKMATE  # preto ganha
         else:
-            return CHECKMATE  # white wins
+            return CHECKMATE  # branco ganha
     elif game_state.stalemate:
         return STALEMATE
     score = 0
@@ -124,6 +124,6 @@ def scoreBoard(game_state):
 
 def findRandomMove(valid_moves):
     """
-    Picks and returns a random valid move.
+    Escolhe e retorna um movimento válido aleatório.
     """
     return random.choice(valid_moves)
