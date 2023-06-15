@@ -42,25 +42,20 @@
 |![pygame](https://img.shields.io/badge/python-pygame-yellowgreen) | https://www.pygame.org/wiki/GettingStarted/ | 2.1.2 |  
   
 </p>
-<h2 id="documentacao"> 
-  Documentação do Git
-</h2>
 
-> O conteúdo relacionado a documentação do Git está disponível no repositório: <b>[Template-git](https://github.com/WILSON-SONS-SERVICOS-MARITIMOS-LTDA/template-git)</b> 
 
 <h2 id="executar"> 
   Como executar o projeto
 </h2>
 
-<b>Atente-se para as versões instaladas do Python e PyGame<br/>
+> Atente-se para as versões instaladas do Python e PyGame
 
-<p><b><color="yellow">Caso não consiga instalar o PyGame na versão correta, temos no repositório um executável da biblioteca.</color></b></p>
+> Caso não consiga instalar o PyGame na versão correta, temos no repositório um executável da biblioteca.
 
-<b>Primeiro passo: Clone o repositório para máquina local.</b>
+> Primeiro passo: Clone o repositório para máquina local.
 
-<b>Segundo Passo: Dentro da pasta baixada, em seu terminal, inicie o jogo com o código "Python chess/ChessMain.py"</b>
+> Segundo Passo: Dentro da pasta baixada, em seu terminal, inicie o jogo com o código "Python chess/ChessMain.py"
 
-<b>Em Construção<br/>
 
 
 <h2 id="tecnologias"> 
