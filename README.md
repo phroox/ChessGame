@@ -59,10 +59,6 @@
   ```
 
 
-
-https://github.com/Gabriel-Arc
-
-
 <h2 id="contribuicoes"> 
   Contribuições
 </h2>
