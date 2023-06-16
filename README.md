@@ -49,7 +49,10 @@
 
 > <b>Atente-se para as versões instaladas do Python e PyGame.</b>
 
-> <b>Caso não consiga instalar o PyGame na versão correta, temos no repositório um executável da biblioteca.</b>
+> <b>Caso não consiga instalar o PyGame na versão correta, temos no repositório um executável da biblioteca, então pela linha de comando:</b>
+```
+python -m pip install .\pygame-2.1.2-cp311-cp311-win_amd64.whl 
+```
 
 > <b>Primeiro passo: Clone o repositório para máquina local.</b>
 
